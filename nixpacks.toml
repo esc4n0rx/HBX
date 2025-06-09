@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = ["python310", "libGL", "glib", "libzbar", "zbar"]
+aptPkgs = ["libzbar0", "libzbar-dev", "libglib2.0-0", "libsm6", "libxext6", "libxrender-dev", "libgomp1", "libgthread-2.0-0"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["echo 'Build phase completed'"]
+
+[start]
+cmd = "gunicorn -c gunicorn_config.py app:app"
