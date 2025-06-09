@@ -1,0 +1,28 @@
+# --- Framework do Servidor Web ---
+flask==3.0.3
+
+# --- Processamento de Imagem e Computação Numérica ---
+opencv-python==4.9.0.80
+numpy==1.26.4
+
+# --- Core de Inteligência Artificial (YOLOv8) ---
+# Instalará PyTorch como dependência
+ultralytics==8.2.28
+
+# --- Bibliotecas para Leitura de Códigos de Barras ---
+pyzbar==0.1.9
+zxing-cpp==2.2.1
+
+# --- Biblioteca de OCR ---
+# O EasyOCR também depende do PyTorch
+easyocr==1.7.1
+
+# --- PyTorch (CPU) ---
+# A versão explícita garante compatibilidade. 
+# Veja a nota sobre GPU abaixo.
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# --- Servidor de Produção (Recomendado para Cloud) ---
+gunicorn==22.0.0
