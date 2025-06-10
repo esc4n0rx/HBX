@@ -19,7 +19,6 @@ RUN apt-get update && \
     libfontconfig1 \
     libice6 \
     libgomp1 \
-    libgthread-2.0-0 \
     libzbar0 \
     libzbar-dev \
     && rm -rf /var/lib/apt/lists/*
